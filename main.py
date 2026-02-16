@@ -18,7 +18,7 @@ days_passed = delta.days
 
 # ساخت پیام
 if days_passed >= 0:
-    message = f"روزگی روتیشنمون مبارک {days_passed}"
+    message = f"{days_passed} روزگی روتیشنمون مبارک "
 else:
     message = f"{abs(days_passed)} days left until October 11, 2025."
 
