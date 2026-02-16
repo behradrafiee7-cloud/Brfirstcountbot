@@ -3,8 +3,8 @@ from datetime import datetime
 import os
 
 # گرفتن اطلاعات از Secrets
-TOKEN = 8403566708:AAEJ8xuIQ2tzYFQne8TbpiEieu8j1eHudzU"]
-CHAT_ID = os.environ["72569952"]
+TOKEN = os.environ["TOKEN"]
+CHAT_ID = os.environ["CHAT_ID"]
 
 # تاریخ شروع
 start_date = datetime(2025, 10, 11)
@@ -25,7 +25,7 @@ else:
 # ارسال پیام به تلگرام
 url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 data = {
-    "chat_id": 72569952,
+    "chat_id": CHAT_ID,
     "text": message
 }
 
